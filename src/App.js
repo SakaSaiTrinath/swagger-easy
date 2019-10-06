@@ -1,11 +1,13 @@
-import React from "react";
-import Header from './components/Header';
-import "./App.css";
+import React from 'react';
+import NavBar from './components/NavBar';
+import Section from './components/Section';
+import './App.scss';
 
 function App() {
   return (
     <>
-      <Header />
+      <NavBar />
+      <Section />
     </>
   );
 }
