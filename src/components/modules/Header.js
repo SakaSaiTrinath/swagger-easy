@@ -15,6 +15,30 @@ const makeFun = (param, style, className, children) => {
           {children}
         </h2>
       );
+    case 'h3':
+      return (
+        <h3 className={className} style={style}>
+          {children}
+        </h3>
+      );
+    case 'h4':
+      return (
+        <h4 className={className} style={style}>
+          {children}
+        </h4>
+      );
+    case 'h5':
+      return (
+        <h5 className={className} style={style}>
+          {children}
+        </h5>
+      );
+    case 'h6':
+      return (
+        <h6 className={className} style={style}>
+          {children}
+        </h6>
+      );
     default:
       return (
         <h5 className={className} style={style}>

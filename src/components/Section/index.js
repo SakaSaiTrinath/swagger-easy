@@ -4,8 +4,9 @@ import styles from './index.module.scss';
 import MainPage from '../pages/MainPage';
 
 const Section = () => {
+  // console.log(styles.card);
   return (
-    <section className="card" id={styles.card}>
+    <section className="card mx-auto" id={styles.card}>
       <MainPage />
     </section>
   );

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
+@import './styles/variables.scss';
+
+body {
+	height: 100%;
+  font-family: 'Varela', sans-serif !important;
+}
+
+#container {
+	// background-color: hsl(250, 40%, 80%);
+	background-image: linear-gradient($blue-light, $blue-medium, $blue-dark);
+}

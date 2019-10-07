@@ -3,7 +3,7 @@ import styles from './index.module.scss';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg static-top" id={styles.navbar}>
+    <nav className="navbar navbar-expand-lg fixed-top" id={styles.navbar}>
       <a className="navbar-brand" href="/">
         Swagger Easy
       </a>
