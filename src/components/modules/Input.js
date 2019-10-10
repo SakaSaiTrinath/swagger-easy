@@ -12,6 +12,7 @@ const Input = ({ label, type, id, placeholder, color, ...otherstyle }) => {
     <div className="form-group">
       {label && <label htmlFor={id}>{label}</label>}
       <input
+        {...otherstyle}
         style={style}
         id={id}
         type={type}

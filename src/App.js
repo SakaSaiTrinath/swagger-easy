@@ -5,7 +5,6 @@ import Section from './components/Section';
 import styles from './App.module.scss';
 
 function App() {
-  console.log(styles.container);
   return (
     <>
       <NavBar />

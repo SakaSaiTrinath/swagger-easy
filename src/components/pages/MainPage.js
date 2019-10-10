@@ -4,7 +4,7 @@ import { blue } from '../../constants';
 
 const MainPage = () => {
   return (
-    <div className="card-body">
+    <>
       <Header as="h2" color={blue} className="card-title">
         Welcome!
       </Header>
@@ -15,7 +15,7 @@ const MainPage = () => {
       <Button color={blue} float="right">
         Let's make one!
       </Button>
-    </div>
+    </>
   );
 };
 
