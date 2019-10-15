@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 
+import AccordianTitle from './AccordianTitle';
+import AccordianContent from './AccordianContent';
+
 const Accordian = ({ children, color }) => {
   const accEl = useRef();
   const panelEl = useRef();
@@ -33,7 +36,7 @@ const Accordian = ({ children, color }) => {
 
   return (
     <>
-      <div
+      {/* <div
         tabIndex={0}
         onKeyDown={accElClick}
         role="button"
@@ -45,10 +48,13 @@ const Accordian = ({ children, color }) => {
       </div>
       <div ref={panelEl} style={panelStyle}>
         <p>Lorem ipsum...</p>
-      </div>
+      </div> */}
     </>
   );
 };
+
+Accordian.Title = AccordianTitle;
+Accordian.Content = AccordianContent;
 
 Accordian.defaultProps = {
   color: '#ced4da',
@@ -56,7 +62,7 @@ Accordian.defaultProps = {
 };
 
 Accordian.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.node,
   color: PropTypes.string,
 };
 

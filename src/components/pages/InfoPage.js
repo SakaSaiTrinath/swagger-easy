@@ -1,5 +1,6 @@
 import React from 'react';
-import { Input, Dropdown, Accordian } from '../modules';
+import { Link } from 'react-router-dom';
+import { Input, Dropdown, Header, Button } from '../modules';
 
 import { blue } from '../../constants';
 
@@ -11,11 +12,40 @@ const InfoPage = () => {
 
   return (
     <>
-      <div className="card-title">Info</div>
+      <Header as="h3">Info</Header>
       <form>
-        <Dropdown color={blue} options={options} />
+        Open Api Version: <Dropdown color={blue} options={options} />
         <Input type="text" required placeholder="Title" color={blue} />
-        <Accordian>Other options</Accordian>
+        <Input type="text" placeholder="Description" color={blue} />
+        <Input
+          type="text"
+          required
+          placeholder="Version of your API"
+          color={blue}
+        />
+        <Input type="text" placeholder="Url for termsOfService" color={blue} />
+        <Header as="h4">Contact Details</Header>
+        <Input type="text" placeholder="Name of contact" color={blue} />
+        <Input type="text" placeholder="Url of contact" color={blue} />
+        <Input type="text" placeholder="Email of contact" color={blue} />
+        <Header as="h4">License Details</Header>
+        <Input
+          type="text"
+          required
+          placeholder="Name of license"
+          color={blue}
+        />
+        <Input type="text" placeholder="Url of license" color={blue} />
+        <Link to="/">
+          <Button color={blue} float="left">
+            Back
+          </Button>
+        </Link>
+        <Link to="/servers-info">
+          <Button color={blue} float="right">
+            Next
+          </Button>
+        </Link>
       </form>
     </>
   );

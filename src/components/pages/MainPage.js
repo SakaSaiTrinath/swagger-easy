@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { Button, Header } from '../modules';
 import { blue } from '../../constants';
 
@@ -12,9 +14,11 @@ const MainPage = () => {
         Make swagger files easily now by answering questions. No more writing
         yaml and json files.
       </p>
-      <Button color={blue} float="right">
-        Let's make one!
-      </Button>
+      <Link to="/info">
+        <Button color={blue} float="right">
+          Let's make one!
+        </Button>
+      </Link>
     </>
   );
 };

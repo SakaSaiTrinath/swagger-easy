@@ -5,4 +5,6 @@
 	border: 2px solid $blue;
 	box-shadow: 0 4px 8px 0 $blue-light, 0 6px 20px 0 $blue-light;
 	margin-top: 10%;
+	max-height: 480px;
+	overflow-y: scroll;
 } 

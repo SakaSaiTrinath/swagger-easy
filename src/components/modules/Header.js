@@ -51,6 +51,8 @@ const makeFun = (param, style, className, children) => {
 const Header = ({ as, id, className, color, children, ...otherstyle }) => {
   const style = {
     color: `${color}`,
+    marginTop: '40px',
+    marginBottom: '10px',
     ...otherstyle,
   };
 
