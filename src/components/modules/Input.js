@@ -9,18 +9,35 @@ const Input = ({ label, type, id, placeholder, color, ...otherstyle }) => {
   };
 
   return (
-    <div className="form-group">
-      {label && <label htmlFor={id}>{label}</label>}
-      <input
-        {...otherstyle}
-        style={style}
-        id={id}
-        type={type}
-        className="form-control"
-        aria-describedby={label || placeholder || type || id}
-        placeholder={placeholder}
-      />
-    </div>
+    <>
+      {type === 'checkbox' ? (
+        <div className="checkbox">
+          {label && <label htmlFor={id}>{label}</label>}
+          <input
+            {...otherstyle}
+            style={style}
+            id={id}
+            type={type}
+            className="form-control"
+            aria-describedby={label || placeholder || type || id}
+            placeholder={placeholder}
+          />
+        </div>
+      ) : (
+        <div className="form-group">
+          {label && <label htmlFor={id}>{label}</label>}
+          <input
+            {...otherstyle}
+            style={style}
+            id={id}
+            type={type}
+            className="form-control"
+            aria-describedby={label || placeholder || type || id}
+            placeholder={placeholder}
+          />
+        </div>
+      )}
+    </>
   );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Input, Header, Dropdown, Button } from '../modules';
+import { Input, Header, Dropdown, Button, TextArea } from '../modules';
 
-import { blue } from '../../constants';
+import { blue, orange } from '../../constants';
 
 const PathsPage = () => {
   const request_options = [
@@ -35,8 +35,8 @@ const PathsPage = () => {
     <>
       <Header as="h3">Paths (Endpoints) Details</Header>
       <form>
-        <Input type="text" placeholder="Endpoint" color={blue} />
-        Request Method: <Dropdown color={blue} options={request_options} />
+        <Input type="text" required placeholder="Endpoint" color={orange} />
+        Request Method: <Dropdown color={orange} options={request_options} />
         <Input
           type="text"
           placeholder="Tags (If multiple enter them in comma separated)"
@@ -49,20 +49,21 @@ const PathsPage = () => {
           type="text"
           required
           placeholder="Name of parameter"
-          color={blue}
+          color={orange}
         />
-        <Input type="text" required placeholder="Description" color={blue} />
-        In: <Dropdown required color={blue} options={in_options} />
+        <Input type="text" placeholder="Description" color={blue} />
+        In: <Dropdown required color={orange} options={in_options} />
         <Input
           type="checkbox"
           required
-          color={blue}
+          color={orange}
           label="Is this required?"
           aria-label="Is this required?"
         />
         <Header as="h4">-- Schema</Header>
         Type of schema:{' '}
-        <Dropdown required color={blue} options={type_options} />
+        <Dropdown required color={orange} options={type_options} />
+        <TextArea rows="6" color={orange} />
         <Link to="/servers-info">
           <Button color={blue} float="left">
             Back

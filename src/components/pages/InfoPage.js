@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Input, Dropdown, Header, Button } from '../modules';
 
-import { blue } from '../../constants';
+import { blue, orange } from '../../constants';
 
 const InfoPage = () => {
   const options = [
@@ -15,13 +15,13 @@ const InfoPage = () => {
       <Header as="h3">Info</Header>
       <form>
         Open Api Version: <Dropdown color={blue} options={options} />
-        <Input type="text" required placeholder="Title" color={blue} />
+        <Input type="text" required placeholder="Title" color={orange} />
         <Input type="text" placeholder="Description" color={blue} />
         <Input
           type="text"
           required
           placeholder="Version of your API"
-          color={blue}
+          color={orange}
         />
         <Input type="text" placeholder="Url for termsOfService" color={blue} />
         <Header as="h4">Contact Details</Header>
@@ -33,7 +33,7 @@ const InfoPage = () => {
           type="text"
           required
           placeholder="Name of license"
-          color={blue}
+          color={orange}
         />
         <Input type="text" placeholder="Url of license" color={blue} />
         <Link to="/">

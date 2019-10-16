@@ -2,18 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Input, Header, Button } from '../modules';
 
-import { blue } from '../../constants';
+import { blue, orange } from '../../constants';
 
 const ServersPage = () => {
   return (
     <>
       <Header as="h3">Server Details</Header>
       <form>
-        <p classNamw="text-muted">
+        <p className="text-muted">
           Resultant url =>
           https://(username).gigantic-server.com:(port)/(basePath)
         </p>
-        <Input type="text" required placeholder="Server url" color={blue} />
+        <Input type="text" required placeholder="Server url" color={orange} />
         <Input type="text" placeholder="description" color={blue} />
         <Header as="h4">- Server Varibles Details</Header>
         <Header as="h5">-- Username</Header>
@@ -30,7 +30,7 @@ const ServersPage = () => {
           type="text"
           required
           placeholder="default port (Choose one of the above entered ports)"
-          color={blue}
+          color={orange}
         />
         <Input type="text" placeholder="description" color={blue} />
         <Header as="h5">-- basePath</Header>
