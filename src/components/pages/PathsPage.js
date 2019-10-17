@@ -8,7 +8,7 @@ const PathsPage = () => {
   const request_options = [
     { id: 1, name: 'GET', value: 'GET' },
     { id: 2, name: 'POST', value: 'POST' },
-    { id: 2, name: 'DELETE', value: 'DELETE' },
+    { id: 3, name: 'DELETE', value: 'DELETE' },
   ];
 
   const in_options = [
@@ -17,19 +17,19 @@ const PathsPage = () => {
     { id: 3, name: 'body', value: 'body' },
   ];
 
-  const type_options = [
-    { id: 1, name: 'integer', value: 'integer' },
-    { id: 1, name: 'long', value: 'long' },
-    { id: 1, name: 'float', value: 'float' },
-    { id: 1, name: 'double', value: 'double' },
-    { id: 3, name: 'string', value: 'string' },
-    { id: 1, name: 'byte', value: 'byte' },
-    { id: 2, name: 'binary', value: 'binary' },
-    { id: 1, name: 'boolean', value: 'boolean' },
-    { id: 1, name: 'date', value: 'date' },
-    { id: 1, name: 'dateTime', value: 'dateTime' },
-    { id: 1, name: 'password', value: 'password' },
-  ];
+  // const type_options = [
+  //   { id: 1, name: 'integer', value: 'integer' },
+  //   { id: 2, name: 'long', value: 'long' },
+  //   { id: 3, name: 'float', value: 'float' },
+  //   { id: 4, name: 'double', value: 'double' },
+  //   { id: 5, name: 'string', value: 'string' },
+  //   { id: 6, name: 'byte', value: 'byte' },
+  //   { id: 7, name: 'binary', value: 'binary' },
+  //   { id: 8, name: 'boolean', value: 'boolean' },
+  //   { id: 9, name: 'date', value: 'date' },
+  //   { id: 10, name: 'dateTime', value: 'dateTime' },
+  //   { id: 11, name: 'password', value: 'password' },
+  // ];
 
   return (
     <>
@@ -57,13 +57,13 @@ const PathsPage = () => {
           type="checkbox"
           required
           color={orange}
-          label="Is this required?"
-          aria-label="Is this required?"
+          label="Is this required? "
+          ariaLabel="Is this required?"
         />
         <Header as="h4">-- Schema</Header>
-        Type of schema:{' '}
-        <Dropdown required color={orange} options={type_options} />
-        <TextArea rows="6" color={orange} />
+        {/* Type of schema:{' '}
+        <Dropdown required color={orange} options={type_options} /> */}
+        <TextArea rows="6" color={orange} width="250px" id="schema" />
         <Link to="/servers-info">
           <Button color={blue} float="left">
             Back
