@@ -1,0 +1,7 @@
+@import "../../styles/variables.scss";
+
+#navbar {
+	border-bottom: 2px solid $blue;
+	box-shadow: 0 5px 20px $blue-light;
+	background-color: white;
+}

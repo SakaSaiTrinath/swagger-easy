@@ -24,3 +24,16 @@ We can
 All the above can be done by creating a user interface to make documentation by clicks and filling up forms. We can improvise it further by providing pre-defined APIs for common usages which make documentation faster. Further, we can provide recommendations, best practices, and intelligent guesses while users interacting with the user interface.
 
 You can get the latest work done in [victoria](https://github.com/SakaSaiTrinath/swagger-easy/tree/victoria) branch. It is still under development which has not got the base structure but you can get some idea.
+
+
+### Technologies currently used:
+
+-   Reactjs (with Create-React-App)
+-   Redux
+-   Bootstrap
+-   yarn for package manager
+
+### Directions to produce project
+-   Clone repository
+-   Run `yarn` to install node_modules
+-   Run `yarn start` to start the development server. Now, you can see website on, http://localhost:3000/ in browser.
